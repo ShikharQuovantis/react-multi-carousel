@@ -224,7 +224,7 @@ class Carousel extends React.Component<CarouselProps, CarouselInternalState> {
     resetCurrentSlide?: boolean
   ): void {
     if (this.containerRef && this.containerRef.current) {
-      const containerWidth = this.containerRef.current.offsetWidth;
+      const containerWidth = this.containerRef.current.offsetWidth - 40;
       const itemWidth: number = getItemClientSideWidth(
         this.props,
         slidesToShow,
